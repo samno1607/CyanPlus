@@ -641,6 +641,9 @@ struct xhci_ep_ctx {
 #define AVG_TRB_LENGTH_FOR_EP(p)	((p) & 0xffff)
 #define MAX_ESIT_PAYLOAD_FOR_EP(p)	(((p) & 0xffff) << 16)
 
+/* deq bitmasks */
+#define EP_CTX_CYCLE_MASK		(1 << 0)
+
 
 /**
  * struct xhci_input_control_context
