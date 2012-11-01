@@ -1211,8 +1211,8 @@ TWL6030_REGULATOR_DEVICE(vdac, 	1800000, 1800000, 0,0);
 
 static struct regulator_init_data sdp4430_vaux1 = {
 	.constraints = {
-		.min_uV			= 2800000,
-		.max_uV			= 2800000,
+		.min_uV			= 2750000,
+		.max_uV			= 2750000,
 		.apply_uV		= true,
 		.valid_modes_mask	= REGULATOR_MODE_NORMAL
 					| REGULATOR_MODE_STANDBY,
@@ -1281,8 +1281,8 @@ static struct regulator_init_data sdp4430_vpp = {
 
 static struct regulator_init_data sdp4430_vusim = {
 	.constraints = {
-		.min_uV			= 3000000,
-		.max_uV			= 3000000,
+		.min_uV			= 1750000,
+		.max_uV			= 1750000,
 		.apply_uV		= true,
 		.valid_modes_mask	= REGULATOR_MODE_NORMAL
 					| REGULATOR_MODE_STANDBY,
@@ -2391,15 +2391,15 @@ static struct omap_volt_pmic_info omap_pmic_iva = {
 static struct omap_volt_vc_data vc_config = {
 	.vdd0_on = 1375000,        /* 1.375v */
 	.vdd0_onlp = 1375000,      /* 1.375v */
-	.vdd0_ret = 837500,       /* 0.8375v */
+	.vdd0_ret = 800000,       /* 0.8375v */
 	.vdd0_off = 0,		/* 0 v */
 	.vdd1_on = 1300000,        /* 1.3v */
 	.vdd1_onlp = 1300000,      /* 1.3v */
-	.vdd1_ret = 837500,       /* 0.8375v */
+	.vdd1_ret = 800000,       /* 0.8375v */
 	.vdd1_off = 0,		/* 0 v */
 	.vdd2_on = 1200000,        /* 1.2v */
 	.vdd2_onlp = 1200000,      /* 1.2v */
-	.vdd2_ret = 837500,       /* .8375v */
+	.vdd2_ret = 800000,       /* .8375v */
 	.vdd2_off = 0,		/* 0 v */
 };
 #define CONFIG_SERIAL_OMAP_UART2_DMA 1		//dennis.oh 20110124 TI OPP patch
